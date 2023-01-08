@@ -11,7 +11,8 @@ b = 400
 
 console.log(a, b)
 
-const c = 5
-//c = 50
+
+const c = 7
 console.log(c)
+
 
