@@ -1,0 +1,62 @@
+/*
+V e V -> V
+V e F -> F
+V e ? -> F
+
+v ou ? -> v
+f ou v -> v
+f ou f -> F
+
+v xou v -> f
+v xou f -> v
+f xou v -> v
+f xou f -> f
+
+!v -> f
+!f -> v
+*/
+
+function compras(trabalho1, trabalho2) {
+    const comprarSorvete = trabalho1 || trabalho2 //operação OU
+    const comprarTV50 = trabalho1 && trabalho2 //operacção E
+    // const comprarTV32 = !!(trabalho1 ^ trabalho2) // operador OU exclusivo(bitwise xor)
+    const comprarTV32 = trabalho1 != trabalho2
+    const manterSaudavel = !comprarSorvete // operador unário 
+
+    return {comprarSorvete, comprarTV50, comprarTV32, manterSaudavel}
+}
+
+console.log(compras(true, true))
+console.log(compras(true, false))
+console.log(compras(false, true))
+console.log(compras(false, false))
+
+
+/*JS só suporta um retorno, porttando, para retornar todos foi colocado dentro de um objeto*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
