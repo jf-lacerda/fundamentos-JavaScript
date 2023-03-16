@@ -9,8 +9,10 @@ function soma() {
 console.log(soma())
 console.log(soma(1))
 console.log(soma(1.1, 2.2, 3.3))
+console.log(soma('a', 'b', 'c '))
 
 
 
 
  //argumenst é um array e vai pegando o índice de cada elemento do array
+ //arguments, propriedade para recuperar parâmetros
